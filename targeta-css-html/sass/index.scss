@@ -1,3 +1,4 @@
+@import "var";
 *{margin:0; padding: 0; box-sizing: border-box;}
 body{
     display: flex;
@@ -5,9 +6,35 @@ body{
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: rgb(112,255,226);
-    background: linear-gradient(0deg,#3149a7 0%,#177dc7 40%,#01cbdc 100%);
+    
+    // background: rgb(112,255,226);
+    background: linear-gradient(0deg,#0888cd 0%,#27c1c9 40%,#0888cd 100%);
     font-size: 62.5%;
+    .logo{
+        position: absolute;
+        top: 8%;
+        img{
+            width: 200px;
+        }
+    }  
+    .text-going{
+        z-index: 3;
+        position: absolute;
+        top: 22.2%;
+        left: 41.3%;
+        }
+        span {
+            display: block;
+            width: max-content;
+            height: 2.7rem;
+            font-size: 3.2rem;
+            font-family: $going-5;
+            font-weight: 400;
+            text-align: center;
+            -webkit-text-stroke: 1px rgb(250, 198, 56);
+            color: #000000;
+        }
+
     .container_tarjeta{
         display: flex;
         align-items: center;
@@ -15,7 +42,7 @@ body{
         min-width: 67.5rem*0.25;
         min-height: 120rem*0.20;
         background-color: white;
-        border-radius: 0.375rem;
+        border-radius: .375rem;
         // box-shadow: 5px 5px 14px -11px #ffff9490;
         .base_tarjeta{
             display: flex;
@@ -23,8 +50,9 @@ body{
             justify-content: center;
             min-width: 67.5rem*0.25;
             min-height: 120rem*0.20;
-            background: rgb(168,123,5);background: radial-gradient(circle, rgba(168,123,5,1) 40%, rgba(124,71,31,1) 70%, rgba(45,12,2,1) 93%);
-            border-radius: 0.375rem;
+            background: rgb(168,123,5);
+            background: radial-gradient(circle, rgb(60, 0, 0) 35%, rgb(231, 23, 41) 60%, rgb(29, 7, 1) 80%);
+            border-radius: .375rem;
             .particle {
                 border-radius: 50%;
                 width: 100%;
@@ -32,21 +60,21 @@ body{
                 position: relative;
                 z-index: 2;
             }
-            @for $i from 1 through 30 {
+            @for $i from 1 through 55 {
                 @keyframes particle-animation-#{$i} {
                 100% {
-                    transform: translate3d((random(90) * 2.5px), (random(90) * 3px), (random(100) * 1px));
+                    transform: translate3d((random(90) * 2.5008px), (random(90) * 3px), (random(100) * 1px));
                 }
                 }
                 
                 .particle:nth-child(#{$i}){
-                animation: particle-animation-#{$i} 60s infinite;
+                animation: particle-animation-#{$i} 25s infinite;
                 $size: random(3) + 3 + px;
                 opacity: random(100)/100;
                 height: $size;
                 width: $size;
                   animation-delay: -$i * .3s;
-                  transform: translate3d((random(90) * 2.5px), (random(90) * 3px), (random(100) * 1px));
+                  transform: translate3d((random(90) * 2.5008px), (random(90) * 3px), (random(100) * 1px));
                 background: white;
                 }
             }
@@ -54,10 +82,24 @@ body{
                 transform: translatex(-0.1rem);
                 min-width: 67.5rem*0.222 ;
                 min-height: 120rem*0.185;
-                border-radius: 0.375rem;
-                border: .1333rem solid rgb(168,123,5);
-                background: linear-gradient(0deg,#3149a7 0%,#177dc7 40%,#01cbdc 100%);
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 62% 100%, 44% 94%, 0 94%);
+                // border-radius: .375rem;
+                border: .1333rem solid rgb(141, 2, 2);
+                background: rgb(255,237,73);
+background: rgb(255,237,73);
+background: linear-gradient(9deg, rgb(73, 87, 149) 35%, rgb(218, 190, 77) 61%, rgb(255, 109, 30) 83%, rgb(134, 43, 4) 100%);                // background: radial-gradient(linear-gradient, 80g rgba(229,205,139,1) 50%, rgba(231,184,154,1) 60%, rgba(235,145,182,1) 70%, rgba(199,128,201,1) 82%, rgba(133,86,161,1) 87%, rgb(66, 75, 126) 92%);
+
+            }
+        }
+        .going-merry{
+            z-index: 4;
+            position: absolute;
+            width: 300px;
+            height: 387px;
+            top: 24.9%;
+            left: 38.1%;
+            &:hover{
+                transform: scale(1.1) translateX(-13px) ;
+                
             }
         }
     }
