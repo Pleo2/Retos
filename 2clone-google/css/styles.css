@@ -1,0 +1,252 @@
+@import url(/2clone-google/fonts/SFUIDisplay-Light.ttf);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  background-color: #202123;
+}
+body header {
+  display: flex;
+  width: 100vw;
+  margin-top: 5%;
+  height: 5vh;
+  align-items: center;
+  justify-content: space-between;
+}
+body header .hamburger {
+  display: flex;
+  align-items: center;
+  margin-left: 0.6rem;
+  width: 60%;
+  height: 100%;
+}
+body header .hamburger a > i > span {
+  font-size: 1.5rem;
+  color: #808080;
+}
+body header .hamburger .container-tab {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
+  height: 100%;
+}
+body header .hamburger .container-tab .container-tab-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-bottom: solid 0.17rem #7995c9;
+}
+body header .hamburger .container-tab .container-tab-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+body header .hamburger .container-tab div > a {
+  align-self: center;
+  padding: 0 0.4rem 0 0.4rem;
+  text-decoration: none;
+  color: #808080;
+  font-size: 0.6rem;
+  font-weight: 900;
+  font-family: "SFUIDispay-light", sans-serif;
+}
+body header .hamburger .container-tab .container-tab-1 > a {
+  font-weight: 900;
+  color: #7995c9;
+}
+body .container-app_inicio {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+body .container-app_inicio ul {
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+body .container-app_inicio ul li > a > i > span {
+  margin-right: 1rem;
+  align-self: center;
+  font-size: 1.5rem;
+  color: #808080;
+}
+body .container-app_inicio ul .botton-acceder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.25rem 0 1.25rem;
+  height: 100%;
+  width: max-content;
+  background-color: #7995c9;
+  border-radius: 0.3rem;
+}
+body .container-app_inicio ul .botton-acceder a {
+  text-decoration: none;
+  color: #202123;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: "SFUIDispay-light", sans-serif;
+}
+body main {
+  display: flex;
+  width: 100vw;
+  height: 92vh;
+  align-items: center;
+  padding-top: 5rem;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+body .google-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+}
+body .google-logo img {
+  width: 10rem;
+}
+body .container_search-bar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 90vw;
+  height: 2.1875rem;
+  border: solid 1px #808080;
+  border-radius: 1rem;
+}
+body .container_search-bar .i-search {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 1rem;
+}
+body .container_search-bar .i-search > .material-symbols-outlined {
+  position: absolute;
+  transform: translate(30%, 80%);
+  justify-self: flex-end;
+  font-size: 1.3rem;
+  color: #808080;
+}
+body .container_search-bar .search-bar {
+  transform: translate(60%, 0);
+  background-color: inherit;
+  border: none;
+  width: 90%;
+  height: 2.1875rem;
+}
+body .container_search-bar .i-photo_camera > .material-symbols-outlined {
+  position: absolute;
+  transform: translate(740%, 30%);
+  justify-self: flex-end;
+  font-size: 1.3rem;
+  color: #808080;
+}
+body .change-language {
+  display: none;
+}
+body footer {
+  background-color: #171717;
+  width: 100vw;
+}
+body footer .region-name {
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 2rem;
+  font-size: 0.8rem;
+  color: #808080;
+  font-family: "SFUIDispay-light", sans-serif;
+  border-bottom: solid 1px #808080;
+}
+body footer .space-div {
+  width: 100%;
+  height: 2rem;
+  border-bottom: solid 1px #808080;
+}
+body footer .info-footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 6rem;
+  font-size: 0.8rem;
+  color: #808080;
+  font-family: "SFUIDispay-light", sans-serif;
+}
+body footer .info-footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+body footer .info-footer ul .line1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2rem;
+  column-gap: 1.25rem;
+}
+body footer .info-footer ul .line1 .activado-span > button {
+  border: none;
+  background-color: inherit;
+  font-family: "SFUIDispay-light", sans-serif;
+  font-size: 0.8rem;
+  color: #808080;
+}
+body footer .info-footer ul .line1 li > a {
+  text-decoration: none;
+  color: #808080;
+  font-size: 0.8rem;
+  font-family: "SFUIDispay-light", sans-serif;
+}
+body footer .info-footer ul .line2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2rem;
+  column-gap: 1.25rem;
+}
+body footer .info-footer ul .line2 li > a {
+  text-decoration: none;
+  color: #808080;
+  font-size: 0.8rem;
+  font-family: "SFUIDispay-light", sans-serif;
+}
+body footer .info-footer ul .line3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2rem;
+  column-gap: 1.25rem;
+}
+body footer .info-footer ul .line3 li > a {
+  text-decoration: none;
+  color: #808080;
+  font-size: 0.8rem;
+  font-family: "SFUIDispay-light", sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */

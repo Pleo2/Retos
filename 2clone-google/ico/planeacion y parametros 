@@ -1,0 +1,49 @@
+https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png "icono-de-google principales"
+la fuente de el sitio es arial,sans-serif - 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+fuente roboto
+color de el fondo: #202123
+color para resaltar: #7995c9
+color gris: #808080 otra opcion: #82868a
+footer-color:#171717
+tamaño:14px
+margin de 11px
+la pagina esta hecha en flex-box
+
+iconos
+photo-camera;
+meta:
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+html:
+<span class="material-symbols-outlined">
+photo_camera
+</span>
+css:
+<style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+</style>
+search;
+meta:
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+html:
+<span class="material-symbols-outlined">
+search
+</span>
+css:
+<style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+</style>
