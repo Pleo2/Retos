@@ -1,0 +1,51 @@
+* {
+  font-size: 115%;
+}
+
+body main .main__bitcoin-baby {
+  background-image: url(../assets/img/bitcoinbaby2x.jpg);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60rem;
+}
+body main .main__bitcoin-baby h2 {
+  margin-top: 11.52rem;
+  font-size: 8.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+}
+body main .main__plans .plans__card {
+  justify-content: space-evenly;
+}
+body main .main__plans .plans__card {
+  justify-content: space-evenly;
+}
+body footer {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+body footer ul {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  gap: 3rem;
+  list-style: none;
+}
+body footer li > a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  text-align: left;
+}
+body footer span {
+  width: 9.6rem;
+  height: 7.35rem;
+}
+
+/*# sourceMappingURL=tablet.css.map */
